@@ -1,0 +1,262 @@
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80");
+    // background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .wrapper-filter {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(rgb(240, 239, 247), 0.3);
+  }
+  .top-section {
+  //   background-color: bisque;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 19vh;
+  }
+  .top-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+  .content-section {
+  //   background-color: rgba(rgb(76, 29, 247),0.3);
+    height: 70vh;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 0px 0 0 0;
+  }
+  .content-container {
+    // background-color: rgba(rgb(29, 247, 192), 0.3);
+    display: flex;
+    width: 80%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // gap: 10px;
+  }
+  .content-boxa {
+    background-color: rgba(rgb(248, 249, 252), 0.5);
+    display: flex;
+    width: 100%;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+    // border-radius: 50%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .boxa-title30 {
+    // background-color: rgba(rgb(48, 94, 231), 0.7);
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .boxa-inlet-item30 {
+    display: flex;
+    width: 60%;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxa-inlet3 {
+    background-color: rgba(rgb(238, 230, 231), 0.3);
+    display: flex;
+    width: 150%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border-width: 1.5px;
+    border-color: rgba(rgb(101, 91, 236), 0.8);
+    color: black;
+    font-size: 14px;
+  }
+  .boxa-title31 {
+    // background-color: rgba(rgb(128, 233, 181), 0.7);
+    display: flex;
+    width: 80%;
+    height: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .boxa-text311 {
+    // background-color: rgba(rgb(128, 161, 233), 0.7);
+    display: flex;
+    width: 100%;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgba(rgb(20, 20, 20), 0.9);
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .sub-text311 {
+    font-size: 19px;
+    color: rgba(rgb(223, 15, 15), 0.9);
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .boxa-text312 {
+    // background-color: rgba(rgb(128, 233, 181), 0.7);
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(rgb(20, 20, 20), 0.9);
+    font-family: sans-serif;
+  }
+  .boxa-title32 {
+    // background-color: rgba(rgb(233, 222, 128), 0.7);
+    background-color: rgba(rgb(175, 26, 6), 0.7);
+    display: flex;
+    width: 60%;
+    height: 2.0rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 1rem;
+  }
+  .boxa-item321 {
+    // background-color: rgba(rgb(192, 226, 70), 0.5);
+    display: flex;
+    width: 40%;
+    height: 2.0rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 2.5rem;
+  }
+  .boxa-item322 {
+    // background-color: rgba(rgb(104, 70, 226), 0.5);
+    display: flex;
+    width: 70%;
+    height: 2.0rem;
+    justify-content: left;
+    align-items: center;
+  }
+  .content-click3 {
+    color: rgba(rgb(241, 243, 241), 1);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  .icon {
+    font-size: 20px;
+    color: rgba(rgb(241, 243, 241), 1);
+  }
+  .boxa-title33 {
+    // background-color: rgba(rgb(236, 141, 62), 0.7);
+    display: flex;
+    width: 50%;
+    height: 9rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxa-text33 {
+    background-color: rgba(rgb(45, 46, 45), 0.7);
+    display: flex;
+    width: 7.5rem;
+    height: 7.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    color: rgba(rgb(236, 229, 229), 0.8);
+    border-radius: 50%;
+  }
+  .boxa-text331 {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(rgb(26, 135, 238), 0.9);
+    cursor: pointer;
+  }
+  .boxa-title34 {
+    // background-color: rgba(rgb(124, 175, 6), 0.7);
+    display: flex;
+    width: 70%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 1rem;
+    gap: 6rem;
+  }
+  .boxa-text341 {
+    text-decoration: none;
+    color: rgba(rgb(45, 46, 45), 0.7);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  .footer-section {
+    display: flex;
+    // background-color: rgba(rgb(231, 231, 221),0.3);
+    justify-content: center;
+    height: 12vh;
+    width: 100%;
+    align-items: center;
+  }
+  .footer-container {
+    display: flex;
+    background-color: rgba(rgb(233, 239, 240), 0.5);
+    justify-content: center;
+    height: 10vh;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.75rem;
+  }
+  .footer-box1 {
+    // background-color: rgba(rgb(233, 239, 240),0.5);
+    display: flex;
+    height: 3vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .box1-text {
+    font-size: 14px;
+    color: rgba(rgb(25, 25, 26), 0.8);
+    font-family: sans-serif;
+  }
+  .footer-box2 {
+    // background-color: rgba(rgb(52, 187, 211),0.5);
+    display: flex;
+    height: 6vh;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+  }
+  .footer-box2-sub {
+    // background-color: rgba(rgb(94, 52, 211),0.5);
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxcard1-img1 {
+    display: flex;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }

@@ -1,0 +1,87 @@
+
+<div class="app-wrapper">
+  <div class="wrapper-filter">
+    <div class="top-section">
+      <div class="top-container">
+
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="content-container">
+        <div class="content-boxa">
+          <div class="boxa-title34">
+            <div class="boxa-text34">
+              <img class="boxa-text34-img" src={{this.editImg}}>   
+            </div>
+          </div>
+          <div class="boxa-title35">
+            <p class="boxa-text35">
+              {{this.editUser}}    
+            </p>
+          </div>
+          <div class="boxa-title30">
+            <div class="boxa-inlet-item30">
+              <input #passwordInput class="boxa-inlet3" placeholder="Re-Password" />
+            </div>
+          </div>
+          <div class="boxa-title30">
+            <div class="boxa-inlet-item30">
+              <input #emailInput class="boxa-inlet3" placeholder="Re-Email address" />
+            </div>
+          </div>
+          <div class="boxa-title31">
+            <div class="boxa-box31">
+              <ion-content padding>
+                <button class="boxa-box31-text" ion-button full (click)="captureImage()" >Image</button>
+                <!-- <ion-card>
+                    <ion-card-header>
+                        Current Image
+                    </ion-card-header>
+                    <ion-card-content>
+                        <img [src]="currentImage" *ngIf="currentImage"/>
+                    </ion-card-content>
+                </ion-card> -->
+               
+              </ion-content>
+            </div>  
+          </div>
+          <div class="boxa-title32">
+            <div class="boxa-item32">
+              <a class="content-click3" (click)="editUSER(passwordInput,emailInput)">Edit user</a>
+            </div>
+          </div>
+          <div class="boxa-title36">
+            <a class="boxa-text36" (click)="userinfo()">UserInfo</a>
+          </div>       
+        </div>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="footer-container">
+        <div class="footer-box1">
+          <div class="box1-text">sponsor</div>
+        </div>
+        <div class="footer-box2">
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.pepsi.com/favicon.ico">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.honda.com/favicon.ico">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://est.com/dev/wp-content/uploads/2020/09/cropped-siteicon-32x32.jpg">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.toyota.com/favicon.ico">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.whatsapp.com/favicon.ico">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.7up.com/favicon.ico">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

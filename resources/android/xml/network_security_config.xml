@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">172.20.10.10:8080/api/login</domain>
+        <domain includeSubdomains="true">172.20.10.10:8080/api/login/addlogin</domain>
+        <domain includeSubdomains="true">172.20.10.10:8080/api/login/delete/</domain>
+        <domain includeSubdomains="true">172.20.10.10:8080/sendmail</domain>
+
+        <domain includeSubdomains="true">172.20.10.10:8080/api/orders</domain>
+        <domain includeSubdomains="true">172.20.10.10:8080/api/orders/buysale/sale</domain>
+        <domain includeSubdomains="true">172.20.10.10:8080/api/productlists</domain>
+        <domain includeSubdomains="true">172.20.10.10:8080/api/productlists/</domain>
+    </domain-config>
+</network-security-config>

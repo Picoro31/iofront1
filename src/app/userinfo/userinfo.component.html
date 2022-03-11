@@ -1,0 +1,191 @@
+<div class="app-wrapper">
+  <div class="wrapper-filter">
+    <div class="top-section">
+      <div class="top-container1">
+        
+      </div>
+      <div class="top-container2">
+        <div class="top-con-box1">
+          <div class="top-con-box1-txt1">
+            Hello :&nbsp;&nbsp;{{this.loginuser}}
+          </div>
+          <div class="top-con-box1-txt2">
+            <a class="top-con-box1-txt2-click" (click)="edituser()" >Edit User</a>
+          </div>
+          <div class="top-con-box1-txt3">
+            <a class="top-con-box1-txt3-click" (click)="logout()" >Log Out</a>
+          </div>
+        </div>
+        <div class="top-con-box2">
+          <img class="top-con-box2-img" src={{this.loginimg}}>
+        </div>       
+      </div>
+    </div>
+
+    <div class="content-section">
+      <div class="content-container">
+        <div class="content-boxa">
+          <div class="con-boxa-arr1">
+            <div class="con-boxa-arr1-1">
+              <p class="con-boxa-1-1-text1">{{this.orderspercsale4i}}</p>
+              <p class="con-boxa-1-1-text2">%</p>
+            </div>
+            <div class="con-boxa-arr1-2">
+              <p class="con-boxa-1-1-text1">{{this.orderspercbuy4i}}</p>
+              <p class="con-boxa-1-1-text2">%</p>
+            </div>
+            <div class="con-boxa-arr1-3">
+              <img class="con-boxa-1-3-img" src={{this.productimg4i1}}>
+            </div>
+          </div>
+          <div class="con-boxa-arr2">
+            <div class="con-boxa-arr2-1">
+              <div class="con-boxa-arr2-1-top">
+                <i class='material-icons-outlined'>receipt</i>&nbsp;sale
+              </div>
+              <div class="con-boxa-arr2-1-down">
+                <p class="con-boxa-1-1-text2">{{this.ordersnumbersale4i}}&nbsp;TXN</p>
+              </div>         
+            </div>
+            <div class="con-boxa-arr2-2">
+              <div class="con-boxa-arr2-2-top">
+                <i class='material-icons-outlined'>shopping_cart</i>&nbsp;buy
+              </div>
+              <div class="con-boxa-arr2-2-down">
+                <p class="con-boxa-1-1-text2">{{this.ordersnumberbuy4i}}&nbsp;TXN</p>
+              </div>
+            </div>
+            <div class="con-boxa-arr2-3">
+              <div class="con-boxa-arr2-3-top">
+                <i class='material-icons-outlined'>balance</i>
+              </div>
+              <div class="con-boxa-arr2-3-down">
+                <p class="con-boxa-1-1-text2">
+                  {{this.ordersbalance4i}}&nbsp;M
+                </p>
+              </div>            
+            </div>
+          </div>         
+        </div>
+        <div class="content-boxb">
+          <div class="con-boxb">
+            <div class="content-boxb-box1">
+              <div class="con-box1-name">
+                <p class='logincontent-texth2'>{{this.ordernamess4i1}}</p>
+              </div>
+              <div class="con-box1-buysale">
+                <p [ngStyle]="{ color: getColorStatus1(this.orderbuysale4i1) }">
+                  {{this.orderbuysale4i1}}
+                </p>   
+              </div>
+              <div class="con-box1-qty">
+                <p>{{this.orderquantity4i1}}&nbsp;(qt)</p>
+              </div>
+              <div class="con-box1-tot">
+                <p>{{this.ordertotal4i1}}&nbsp;(B)</p>
+              </div>
+            </div>
+            <br>
+            <div class="content-boxb-box1">
+              <div class="con-box1-name">
+                <p class='logincontent-texth2'>{{this.ordernamess4i2}}</p>
+              </div>
+              <div class="con-box1-buysale">
+                <p [ngStyle]="{ color: getColorStatus1(this.orderbuysale4i2) }">
+                  {{this.orderbuysale4i2}}
+                </p>   
+              </div>
+              <div class="con-box1-qty">
+                <p>{{this.orderquantity4i2}}&nbsp;(qt)</p>
+              </div>
+              <div class="con-box1-tot">
+                <p>{{this.ordertotal4i2}}&nbsp;(B)</p>
+              </div>
+            </div>
+            <br>
+            <div class="content-boxb-box1">
+              <div class="con-box1-name">
+                <p class='logincontent-texth2'>{{this.ordernamess4i3}}</p>
+              </div>
+              <div class="con-box1-buysale">
+                <p [ngStyle]="{ color: getColorStatus1(this.orderbuysale4i3) }">
+                  {{this.orderbuysale4i3}}
+                </p>   
+              </div>
+              <div class="con-box1-qty">
+                <p>{{this.orderquantity4i3}}&nbsp;(qt)</p>
+              </div>
+              <div class="con-box1-tot">
+                <p>{{this.ordertotal4i3}}&nbsp;(B)</p>
+              </div>
+            </div>
+            <br>
+            <div class="content-boxb-box1">
+              <div class="con-box1-name">
+                <p class='logincontent-texth2'>{{this.ordernamess4i4}}</p>
+              </div>
+              <div class="con-box1-buysale">
+                <p [ngStyle]="{ color: getColorStatus1(this.orderbuysale4i4) }">
+                  {{this.orderbuysale4i4}}
+                </p>   
+              </div>
+              <div class="con-box1-qty">
+                <p>{{this.orderquantity4i4}}&nbsp;(qt)</p>
+              </div>
+              <div class="con-box1-tot">
+                <p>{{this.ordertotal4i4}}&nbsp;(B)</p>
+              </div>
+            </div>
+            <!-- <br>
+            <div class="content-boxb-box1">
+              <div class="con-box1-name">
+                <p class='logincontent-texth2'>{{this.ordernamess4i5}}</p>
+              </div>
+              <div class="con-box1-buysale">
+                <p [ngStyle]="{ color: getColorStatus1(this.orderbuysale4i5) }">
+                  {{this.orderbuysale4i5}}
+                </p>   
+              </div>
+              <div class="con-box1-qty">
+                <p>{{this.orderquantity4i5}}&nbsp;(qt)</p>
+              </div>
+              <div class="con-box1-tot">
+                <p>{{this.ordertotal4i5}}&nbsp;(B)</p>
+              </div>
+            </div> -->
+          </div>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="footer-container">
+        <div class="footer-box1">
+          <div class="box1-text">sponsor</div>
+        </div>
+        <div class="footer-box2">
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.pepsi.com/favicon.ico">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.honda.com/favicon.ico">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://est.com/dev/wp-content/uploads/2020/09/cropped-siteicon-32x32.jpg">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.toyota.com/favicon.ico">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.whatsapp.com/favicon.ico">
+          </div>
+          <div class="footer-box2-sub">
+            <img class="boxcard1-img1" src="https://www.7up.com/favicon.ico">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
